@@ -1,0 +1,16 @@
+@function psdpx($px){
+    @return #{$px/20}rem;
+}
+$localhost:"http://121.196.103.86:888/";
+
+.firstpage{
+    width: 100%;
+    height: 100vh;
+    background: url("#{$localhost}background1.jpg") no-repeat center/cover;
+    p{
+        font-size: psdpx(80);
+        position: absolute;
+        left: 60%;
+        top: 40%;
+    }
+}

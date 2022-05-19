@@ -1,0 +1,19 @@
+@function psdpx($px){
+    @return #{$px/20}rem;
+}
+
+.fixed{
+  padding: psdpx(15);
+  display: flex;
+  justify-content:space-between;
+  button{
+      font-size: psdpx(25);
+      background-color:rgba($color: #000000, $alpha: 0);
+      color: wheat;
+  }
+  .right{
+      display: flex;
+      width: psdpx(250);
+      justify-content: space-between;
+  }
+}
