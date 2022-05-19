@@ -12,5 +12,37 @@ $localhost:"http://121.196.103.86:888/";
         position: absolute;
         left: 60%;
         top: 40%;
+        opacity: 0;
+        color: white;
+        transition: all 2s ease-in-out;
+    }
+    .name-container{
+        display: flex;
+        font-size: psdpx(40);
+        position: absolute;
+        left: 20%;
+        top: 70%;
+        opacity: 0;
+        transition: all 2s ease-in-out; 
+        .heart{
+            width: psdpx(50);
+            background:url("#{$localhost}heart.jpeg") no-repeat center/130%;
+        }
+        .me,.u{
+            width: psdpx(100);
+            text-align: center;
+            height: psdpx(50);
+            line-height: psdpx(50);
+        }
+        .me{
+            background-color: #7d6685;
+            border-top-left-radius: psdpx(10);
+            border-bottom-left-radius: psdpx(10);
+        }
+        .u{
+            background-color:rgb(186, 187, 154);
+            border-top-right-radius: psdpx(10);
+            border-bottom-right-radius: psdpx(10);
+        }
     }
 }
