@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,35 +8,72 @@
     <title>LOVE</title>
     <link rel="stylesheet" href="./css/index.css">
 </head>
+
 <body>
-    <nav class="fixed"> 
-        <div class="left"><button>LOVE</button></div>
+    <nav class="fixed">
+        <div class="left"><button>LOVE</button>  <button class="audioctrl">音乐</button> <button class="changeMusic">切换背景音乐</button></div>
         <div class="right">
-        <button class="toFirst">起始</button>
-        <button class="toStory">故事</button>
-        <button class="toPic">相册 </button>
+            <button class="toFirst">起始</button>
+            <button class="toStory">故事</button>
+            <button class="toPic">相册 </button>
         </div>
     </nav>
     <main>
         <div class="firstpage">
             <p>I LOVE YOU</p>
             <div class="name-container">
-                <div class="me">me</div>
+                <div class="me">小恐龙</div>
                 <div class="heart"></div>
-                <div class="u">you</div>
+                <div class="u">小天使</div>
             </div>
         </div>
         <div class="story">
             <div class="title">
                 <p class="mainTitle">Our Love Story</p>
-                <p class="subTitlee">about us</p>
+                <p class="subTitle">about us</p>
+            </div>
+            <div class="firstpart part">
+                <p>2020.5.21,我们在一起了</p>
+                <div></div>
+                <p>但是却像早就在一起的恋人</p>
+            </div>
+            <div class="secondpart part">
+                <p>细水长流,每一次见你都会心动</p>
+                <div></div>
+                <p>从校服到婚纱，爱让我们变成更好的人</p>
+            </div>
+            <div class="thirdpart part">
+                <p>能一起经历每个阶段</p>
+                <div></div>
+                <p>是我的荣幸</p>
+            </div>
+            <div class="button">
+                <button>home</button>
             </div>
         </div>
-        <div class="pictures"></div>
+        <div class="time">
+            <p class="content">我们在一起已经</p>
+            <div class="datetime"></div>
+            <p class="content">Save the date</p>
+        </div>
+        <div class="pictures">
+            <ul>
+                <li class="pic1"><img src="http://121.196.103.86:888/pic1.jpg" alt=""></li>
+                <li class="pic2"><img src="http://121.196.103.86:888/pic2.jpg" alt=""></li>
+                <li class="pic3"><img src="http://121.196.103.86:888/pic3.jpg" alt=""></li>
+                <li class="pic4"><img src="http://121.196.103.86:888/pic4.jpg" alt=""></li>
+                <li class="pic5"><img src="http://121.196.103.86:888/pic5.jpg" alt="">   <img src="http://121.196.103.86:888/pic8.jpg" alt=""></li>
+                <li class="pic6"><img src="http://121.196.103.86:888/pic6.jpg" alt="">            <img src="http://121.196.103.86:888/pic7.jpg" alt=""></li>
+            </ul>
+        </div>
     </main>
     <footer>
-        <p></p>
+        <div class="lastPic">很开心生活有你</div>
+        <div class="us"><p>LOVE.小恐龙 & 小天使</p></div>
     </footer>
+    <audio class="audio" loop autoplay 
+            src="http://m8.music.126.net/20220522183102/63e299bf1f2a56d918f9643bfb930ba8/ymusic/obj/w5zDlMODwrDDiGjCn8Ky/2868349721/9096/7a83/eaf1/5d3c6e1df5358b0f6090f6e0f516d647.mp3">
+    </audio>
     <script src="./js/index.js"></script>
 </body>
 </html>

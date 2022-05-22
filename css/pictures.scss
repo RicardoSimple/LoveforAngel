@@ -1,0 +1,30 @@
+@function psdpx($px){
+    @return #{$px/20}rem;
+}
+$localhost:"http://121.196.103.86:888/";
+.pictures{
+    width: 100%;
+    height: 150vh;
+    ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    li{
+        margin:psdpx(10) ;
+        height: 40vh;
+        width: 40vw;
+        &:hover img{
+            border: psdpx(7) wheat solid;
+            border-radius: psdpx(5);
+            transition: all 1s ease;
+        }
+        img{
+            max-width: 100%;
+            max-height: 100%;
+            height: auto;
+            width: auto;
+        }
+    }
+}

@@ -1,6 +1,13 @@
 @import "./nav.scss";
 @import "./firstpage.scss";
 @import "./story.scss";
+@import "./time.scss";
+@import "./pictures.scss";
+@import "./footer.scss";
+@font-face {
+    font-family: 'lzh的另一个字体';
+    src: url(../fonts/t100_1618473.ttf);
+}
 ul {
     margin: 0;
     padding: 0;
@@ -17,8 +24,19 @@ li {
 }
 button{
     border: none;
+    cursor: pointer;
+    font-family: 'lzh的另一个字体';
+    font-weight: bold;
+    &:hover{
+        color: plum;
+        transition: all 0.7s ease;
+        background-color: cadetblue;
+        border-radius: 5px;
+    }
 }
 html{
     font-size: 20px;
     padding: 0px;
+    font-family: 'lzh的另一个字体';
+    font-weight: bold;
 }
