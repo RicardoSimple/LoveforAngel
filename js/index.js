@@ -86,6 +86,7 @@ wordsFadeIn('.part10');
 wordsFadeIn('.part11');
 wordsFadeIn('.part12');
 wordsFadeIn('.part13');
+wordsFadeIn('.part14');
 
 let autoPlay=document.querySelector('.autoPlay');
 let playFlag = false;
@@ -99,7 +100,7 @@ autoPlay.addEventListener('click',()=>{
                     behavior: "smooth"
                 });
                 height++;
-            },10);
+            },20);
         autoPlay.innerHTML='停止滚动';
         autoPlay.style.backgroundColor='pink';
         playFlag=true;

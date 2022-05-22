@@ -86,11 +86,39 @@
     .story .part p {
       font-size: 1.5rem; }
   .story .part1 div {
-    background: url(../bcg/heart1.jpeg) no-repeat center/contain; }
+    background: url(../bcg/heart1.jpeg) no-repeat center/cover; }
   .story .part2 div {
     background: url(../bcg/heart2.jpeg) no-repeat center/cover; }
   .story .part3 div {
     background: url(../bcg/heart3.jpeg) no-repeat center/cover; }
+  .story .part4 div {
+    background: url(../bcg/heart4.jpeg) no-repeat center/cover; }
+  .story .part5 div {
+    background: url(../bcg/heart5.jpeg) no-repeat center/cover; }
+  .story .part6 div {
+    background: url(../bcg/heart6.jpeg) no-repeat center/cover; }
+  .story .part7 div {
+    background: url(../bcg/heart7.jpeg) no-repeat center/cover; }
+  .story .part8 div {
+    background: url(../bcg/heart8.jpeg) no-repeat center/cover; }
+  .story .part9 div {
+    background: url(../bcg/heart9.jpeg) no-repeat center/cover; }
+  .story .part10 div {
+    background: url(../bcg/heart10.jpeg) no-repeat center/cover; }
+  .story .part11 div {
+    background: url(../bcg/heart11.jpeg) no-repeat center/cover; }
+  .story .part12 div {
+    background: url(../bcg/heart12.jpeg) no-repeat center/cover; }
+  .story .part13 div {
+    background: url(../bcg/heart13.jpeg) no-repeat center/cover; }
+  .story .part14 div {
+    background: url(../bcg/heart14.jpeg) no-repeat center/cover; }
+  .story .part1 div, .story .part5 div, .story .part6 div {
+    background-size: contain; }
+  .story .part4 div, .story .part9 div, .story .part10 div, .story .part11 div, .story .part12 div, .story .part13 div, .story .part14 div {
+    background-size: 200%; }
+  .story .part4 div {
+    background-size: 300%; }
   .story .button button {
     width: 5rem;
     height: 2rem;

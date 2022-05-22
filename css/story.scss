@@ -38,16 +38,19 @@ $localhost:"http://121.196.103.86:888/";
             font-size: psdpx(30);
         }
     }
-    .part1 div{
-        background: url(../bcg/heart1.jpeg) no-repeat center/contain;
+    @for $number from 1 through 14 {
+        .part#{$number} div{
+        background: url(../bcg/heart#{$number}.jpeg) no-repeat center/cover;
+        }
     }
-    .part2 div{
-        background: url(../bcg/heart2.jpeg) no-repeat center/cover;
-
+    .part1 div,.part5 div,.part6 div{
+       background-size: contain;
     }
-    .part3 div{
-        background: url(../bcg/heart3.jpeg) no-repeat center/cover;
-
+    .part4 div,.part9 div,.part10 div,.part11 div,.part12 div,.part13 div,.part14 div{
+        background-size: 200%;
+    }
+    .part4 div{
+        background-size: 300%;
     }
     .button button{
         width: psdpx(100);
