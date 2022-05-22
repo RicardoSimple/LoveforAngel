@@ -5,7 +5,7 @@ $localhost:"http://121.196.103.86:888/";
 
 .story{
     width: 100%;
-    height: 100vh;
+    height: 270vh;
     padding: psdpx(100);
     text-align: center;
     display: flex;
@@ -26,6 +26,8 @@ $localhost:"http://121.196.103.86:888/";
         display: flex;
         justify-content: space-around;
         margin-bottom: psdpx(30);
+        opacity: 0;
+        transition: all 2s ease;
         div{
             width: psdpx(50);
             height: psdpx(50);
@@ -36,14 +38,14 @@ $localhost:"http://121.196.103.86:888/";
             font-size: psdpx(30);
         }
     }
-    .firstpart div{
+    .part1 div{
         background: url(../bcg/heart1.jpeg) no-repeat center/contain;
     }
-    .secondpart div{
+    .part2 div{
         background: url(../bcg/heart2.jpeg) no-repeat center/cover;
 
     }
-    .thirdpart div{
+    .part3 div{
         background: url(../bcg/heart3.jpeg) no-repeat center/cover;
 
     }

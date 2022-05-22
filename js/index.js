@@ -72,6 +72,56 @@ changeMusic.addEventListener('click',()=>{
     audioTag.play();
     flag = true;
 })
+
+wordsFadeIn('.part1');
+wordsFadeIn('.part2');
+wordsFadeIn('.part3');
+wordsFadeIn('.part4');
+wordsFadeIn('.part5');
+wordsFadeIn('.part6');
+wordsFadeIn('.part7');
+wordsFadeIn('.part8');
+wordsFadeIn('.part9');
+wordsFadeIn('.part10');
+wordsFadeIn('.part11');
+wordsFadeIn('.part12');
+wordsFadeIn('.part13');
+
+let autoPlay=document.querySelector('.autoPlay');
+let playFlag = false;
+let timer;
+autoPlay.addEventListener('click',()=>{
+    let height=window.scrollY;
+    if(playFlag==false){
+            timer=setInterval(()=>{ 
+                window.scrollTo({
+                    top: height,
+                    behavior: "smooth"
+                });
+                height++;
+            },10);
+        autoPlay.innerHTML='停止滚动';
+        autoPlay.style.backgroundColor='pink';
+        playFlag=true;
+    }else{
+       clearInterval(timer);
+       autoPlay.innerHTML='自动滚动';
+       autoPlay.style.backgroundColor='';
+       playFlag=false;
+    }
+})
+
+function wordsFadeIn(str){
+let part1 = document.querySelector(str);
+setInterval(()=>{
+    if(part1.getBoundingClientRect().top<500){
+        part1.style.opacity=1;
+    }
+    else{
+        part1.style.opacity=0;
+    }
+},100);
+}
 function scollToDiv(){
     window.scrollTo({
         top: 0,
